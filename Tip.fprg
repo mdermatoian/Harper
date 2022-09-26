@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-26 12:49:26 AM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0wOS0yNjsxMjo0NDoxMiBBTTsyNzU4"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0wOS0yNjsxMjo0OToyNiBBTTsyOzI4Nzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="t" type="Real" array="False" size=""/>
+            <input variable="p"/>
+            <assign variable="t" expression="p*.15"/>
+            <output expression="&quot;Suggested Tip is &quot; &amp; t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
