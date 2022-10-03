@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mattd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-02 08:55:21 PM"/>
+        <attribute name="created" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6Mzk6NDIgUE07MjkyMw=="/>
+        <attribute name="edited" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6NTU6MjEgUE07MzszMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l" type="Real" array="False" size=""/>
+            <declare name="w" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <input variable="l"/>
+            <input variable="w"/>
+            <assign variable="a" expression="l*w"/>
+            <assign variable="c" expression="(l*2)+(2*w)"/>
+            <output expression="&quot;The Area Equals &quot; &amp; a" newline="True"/>
+            <output expression="&quot;The Circumference Equals &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

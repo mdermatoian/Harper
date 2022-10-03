@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mattd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-02 08:50:46 PM"/>
+        <attribute name="created" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6Mzk6NDIgUE07MjkyMw=="/>
+        <attribute name="edited" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6NTA6NDYgUE07MjszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="String" array="False" size=""/>
+            <declare name="h" type="Real" array="False" size=""/>
+            <declare name="r" type="Real" array="False" size=""/>
+            <declare name="p" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="h"/>
+            <input variable="r"/>
+            <assign variable="p" expression="h*r"/>
+            <output expression="n &amp; &quot; Gross Pay Equals &quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

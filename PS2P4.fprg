@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mattd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-02 08:59:24 PM"/>
+        <attribute name="created" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6Mzk6NDIgUE07MjkyMw=="/>
+        <attribute name="edited" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6NTk6MjQgUE07NDszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="String" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="h" type="Real" array="False" size=""/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <declare name="t" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="c"/>
+            <assign variable="h" expression="250"/>
+            <assign variable="f" expression="100"/>
+            <assign variable="t" expression="(c*h)+f"/>
+            <output expression="n &amp; &quot; Tuition Equals &quot; &amp; t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

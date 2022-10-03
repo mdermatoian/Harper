@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mattd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-02 08:47:06 PM"/>
+        <attribute name="created" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6Mzk6NDIgUE07MjkyMw=="/>
+        <attribute name="edited" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDI7MDg6NDc6MDYgUE07MTszMDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="q" type="Real" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="e" type="Real" array="False" size=""/>
+            <input variable="q"/>
+            <input variable="p"/>
+            <assign variable="e" expression="q*p"/>
+            <output expression="&quot;The Extended Price is &quot; &amp; e" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
