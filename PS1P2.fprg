@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-26 12:40:11 AM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0wOS0yNTsxMTozNzoxMCBQTTsyNzcx"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0wOS0yNjsxMjo0MDoxMSBBTTs0OzI4NjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="String" array="False" size=""/>
+            <declare name="s1" type="Real" array="False" size=""/>
+            <declare name="s2" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="s1"/>
+            <input variable="s2"/>
+            <assign variable="a" expression="(s1+s2)/2"/>
+            <output expression="&quot;Average score for &quot; &amp; n" newline="True"/>
+            <output expression="&quot;is &quot; &amp; a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-26 12:47:15 AM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0wOS0yNjsxMjo0NDoxMiBBTTsyNzU4"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0wOS0yNjsxMjo0NzoxNSBBTTsxOzI4NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="g" type="Real" array="False" size=""/>
+            <declare name="m" type="Real" array="False" size=""/>
+            <declare name="p" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <input variable="g"/>
+            <assign variable="p" expression="m/g"/>
+            <output expression="&quot;Miles per gallon equals &quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
