@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mattd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-09 08:49:03 PM"/>
+        <attribute name="created" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDk7MDg6NDQ6NTAgUE07MjkyNQ=="/>
+        <attribute name="edited" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDk7MDg6NDk6MDMgUE07MTszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="t" type="Real" array="False" size=""/>
+            <declare name="s" type="Real" array="False" size=""/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="t" expression="b * c"/>
+            <if expression="t &gt; 50">
+                <then>
+                    <assign variable="s" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="s" expression="25"/>
+                </else>
+            </if>
+            <output expression="&quot;Order Total &quot; &amp; t" newline="True"/>
+            <output expression="&quot;Shipping Cost &quot; &amp; s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mattd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-09 08:44:23 PM"/>
+        <attribute name="created" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDk7MDg6Mzg6MDYgUE07MjkyOQ=="/>
+        <attribute name="edited" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDk7MDg6NDQ6MjMgUE07MTszMDMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="String" array="False" size=""/>
+            <declare name="q" type="Real" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="e" type="Real" array="False" size=""/>
+            <input variable="i"/>
+            <input variable="q"/>
+            <if expression="i = &quot;A&quot;">
+                <then>
+                    <assign variable="p" expression="10"/>
+                </then>
+                <else>
+                    <assign variable="p" expression="20"/>
+                </else>
+            </if>
+            <assign variable="e" expression="q * p"/>
+            <output expression="&quot;Item: &quot; &amp; i" newline="True"/>
+            <output expression="&quot;Unit Price: &quot; &amp; p" newline="True"/>
+            <output expression="&quot;Extended Price: &quot; &amp; e" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

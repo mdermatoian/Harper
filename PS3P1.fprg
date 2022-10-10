@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mattd"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-09 08:37:57 PM"/>
+        <attribute name="created" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDk7MDg6Mjk6MTMgUE07MjkyNw=="/>
+        <attribute name="edited" value="bWF0dGQ7REVTS1RPUC1VN1NER1VMOzIwMjItMTAtMDk7MDg6Mzc6NTcgUE07MTszMDQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="q" type="Real" array="False" size=""/>
+            <declare name="u" type="Real" array="False" size=""/>
+            <declare name="e" type="Real" array="False" size=""/>
+            <declare name="t" type="Real" array="False" size=""/>
+            <declare name="to" type="Real" array="False" size=""/>
+            <input variable="q"/>
+            <if expression="q &gt;= 1000">
+                <then>
+                    <assign variable="u" expression="3"/>
+                </then>
+                <else>
+                    <assign variable="u" expression="5"/>
+                </else>
+            </if>
+            <assign variable="e" expression="q * u"/>
+            <assign variable="t" expression="e * .07"/>
+            <assign variable="to" expression="t + e"/>
+            <output expression="&quot;Quantity Ordered &quot; &amp; q" newline="True"/>
+            <output expression="&quot;Unity Price $&quot; &amp; u" newline="True"/>
+            <output expression="&quot;Extended Price &quot; &amp; e" newline="True"/>
+            <output expression="&quot;Tax $&quot; &amp; t" newline="True"/>
+            <output expression="&quot;Total $&quot; &amp; to" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
