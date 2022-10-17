@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-16 10:45:52 PM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMC0xNjsxMDowNTowMCBQTTsyNzU2"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMC0xNjsxMDo0NTo1MiBQTTs1OzI4Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="sal" type="Real" array="False" size=""/>
+            <declare name="level" type="Real" array="False" size=""/>
+            <declare name="br" type="Real" array="False" size=""/>
+            <declare name="bonus" type="Integer" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="sal"/>
+            <input variable="level"/>
+            <if expression="level &gt;= 10">
+                <then>
+                    <assign variable="br" expression=".25"/>
+                </then>
+                <else>
+                    <if expression="level &lt;= 9 and level &gt;= 5">
+                        <then>
+                            <assign variable="br" expression=".20"/>
+                        </then>
+                        <else>
+                            <assign variable="br" expression=".10"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="bonus" expression="sal * br"/>
+            <output expression="name" newline="True"/>
+            <output expression="bonus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-16 10:40:18 PM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMC0xNjsxMDowNTowMCBQTTsyNzU2"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMC0xNjsxMDo0MDoxOCBQTTs0OzI4NzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="ppt" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="qty"/>
+            <if expression="qty &gt;= 25">
+                <then>
+                    <assign variable="ppt" expression="50"/>
+                </then>
+                <else>
+                    <if expression="qty &gt;= 10 and qty &lt;= 24">
+                        <then>
+                            <assign variable="ppt" expression="60"/>
+                        </then>
+                        <else>
+                            <if expression="qty &gt;= 5 and qty &lt;= 9">
+                                <then>
+                                    <assign variable="ppt" expression="70"/>
+                                </then>
+                                <else>
+                                    <assign variable="ppt" expression="75"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="qty * ppt"/>
+            <output expression="qty" newline="True"/>
+            <output expression="ppt" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

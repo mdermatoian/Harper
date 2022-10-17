@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-16 10:40:42 PM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMC0xNjsxMDowNTowMCBQTTsyNzU2"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMC0xNjsxMDo0MDo0MiBQTTs0OzI4NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pr" type="Real" array="False" size=""/>
+            <declare name="ytm" type="Real" array="False" size=""/>
+            <declare name="ir" type="Real" array="False" size=""/>
+            <declare name="fyi" type="Real" array="False" size=""/>
+            <input variable="pr"/>
+            <input variable="ytm"/>
+            <if expression="pr &gt; 100000 and ytm = 5">
+                <then>
+                    <assign variable="ir" expression=".06"/>
+                </then>
+                <else>
+                    <if expression="pr &lt;= 100000 and pr &gt;= 50000 and ytm = 10">
+                        <then>
+                            <assign variable="ir" expression=".05"/>
+                        </then>
+                        <else>
+                            <if expression="pr &lt;= 100000 and pr &gt;= 50000 and ytm = 5">
+                                <then>
+                                    <assign variable="ir" expression=".04"/>
+                                </then>
+                                <else>
+                                    <assign variable="ir" expression=".02"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="fyi" expression="pr * ir"/>
+            <output expression="pr" newline="True"/>
+            <output expression="ir" newline="True"/>
+            <output expression="fyi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
