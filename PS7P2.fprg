@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 06:37:48 PM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMS0wNjswNjoyOTozMyBQTTsyNzcz"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMS0wNjswNjozNzo0OCBQTTsxOzI4ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="hits" type="Integer" array="False" size=""/>
+            <declare name="atbats" type="Integer" array="False" size=""/>
+            <declare name="ba" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="hits"/>
+            <input variable="atbats"/>
+            <call expression="compba(hits, atbats)"/>
+            <assign variable="ba" expression="compba(hits, atbats)"/>
+            <output expression="name" newline="True"/>
+            <output expression="ba" newline="True"/>
+        </body>
+    </function>
+    <function name="compba" type="Real" variable="ba">
+        <parameters>
+            <parameter name="hits" type="Integer" array="False"/>
+            <parameter name="atbats" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ba" type="Real" array="False" size=""/>
+            <assign variable="ba" expression="hits / atbats"/>
+        </body>
+    </function>
+</flowgorithm>

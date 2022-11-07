@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Matt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 07:29:57 PM"/>
+        <attribute name="created" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMS0wNjswNzoxOTozMiBQTTsyNzcy"/>
+        <attribute name="edited" value="TWF0dDtERVNLVE9QLURVTlI5UDU7MjAyMi0xMS0wNjswNzoyOTo1NyBQTTsyOzI4ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="hrs" type="Real" array="False" size=""/>
+            <declare name="code" type="String" array="False" size=""/>
+            <declare name="tuition" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="hrs"/>
+            <input variable="code"/>
+            <assign variable="tuition" expression="comptuition(hrs, code)"/>
+            <output expression="name" newline="True"/>
+            <output expression="tuition" newline="True"/>
+        </body>
+    </function>
+    <function name="comptuition" type="Real" variable="tuition">
+        <parameters>
+            <parameter name="hrs" type="Real" array="False"/>
+            <parameter name="code" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="tuition" type="Real" array="False" size=""/>
+            <declare name="cph" type="Real" array="False" size=""/>
+            <if expression="code == &quot;I&quot;">
+                <then>
+                    <assign variable="cph" expression="250"/>
+                </then>
+                <else>
+                    <if expression="code == &quot;O&quot;">
+                        <then>
+                            <assign variable="cph" expression="550"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <assign variable="tuition" expression="hrs * cph"/>
+        </body>
+    </function>
+</flowgorithm>
